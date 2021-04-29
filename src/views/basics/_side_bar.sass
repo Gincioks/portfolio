@@ -1,0 +1,91 @@
+.side-bar
+    height: 100vh
+    background: linear-gradient(#2d1a707e, #0007297e)
+    position: absolute
+    right: 0
+    top: 0 
+    z-index: 10
+    display: flex
+    #menu_checkbox
+    display: block
+    label
+        position: absolute
+        top: 7.8%
+        right: 0
+        left: 0
+        margin: 0 auto
+        display: block
+        width: 30px
+        height: 30px
+        transform: translateY(-50%)
+        transition: 0.3s ease transform
+        cursor: pointer
+        div
+            width: 5px
+            height: 2px
+            background-color: white
+            margin-left: 20%
+            margin-bottom: 6px
+            border-radius: 4px
+            transition: 0.3s ease width, 0.3s ease margin-left, 0.3s ease margin-bottom, 0.3s ease background-color
+    label 
+        div:first-child
+            width: 17px
+    label 
+        div:nth-child(2)
+            width: 12px
+    label 
+        div:last-child
+            width: 22px
+            margin-bottom: 0
+    .social_links
+        position: absolute
+        top: 40%
+        img
+            display: block
+            margin: 0 auto
+            width: 80%
+            margin-bottom: 3vh
+            cursor: pointer
+            filter: blur(0.05rem)
+        img:hover
+            animation: 50s hue infinite
+            filter: blur(0.5rem)
+    .other_links
+        position: absolute
+        bottom: 3%
+        text-align: center
+        .theme_toggle
+            display: block
+            width: 70%
+            margin: 0 auto 
+            background: #01032665
+            border: none
+            border-radius: 5px
+            outline: none
+            padding: 8px 0 
+            text-align: center  
+            img
+                margin-top: 13% 
+                color: white
+                width: 40%
+                animation: 5s hue infinite alternate
+.Open
+    width: 15vw
+    background: linear-gradient(#14121ba4, #000103)
+    transition: 0.10s ease
+    #menu_checkbox:checked + label
+        transform: translateY(-40%) rotateZ(-90deg)
+    #menu_checkbox:checked + label div
+        width: 20px
+        margin-left: 12px
+        margin-bottom: 10px
+        background-color: white
+.Close
+    width: 3.47vw
+    transition: 0.1s ease
+
+
+        
+
+    

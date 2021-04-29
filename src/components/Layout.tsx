@@ -1,11 +1,17 @@
 import React, { Component } from "react";
-import { Aux } from "../hoc/ReactAux";
+import Toolbar from "./Navigation/SideBar";
+import { Header } from "./Screens/Header";
 
 type LayoutState = {};
 
 class Layout extends Component<{}, LayoutState> {
   render() {
-    return <Aux>gg</Aux>;
+    return (
+      <React.Fragment>
+        <Toolbar></Toolbar>
+        <Header></Header>
+      </React.Fragment>
+    );
   }
 }
 
