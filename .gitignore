@@ -109,6 +109,9 @@ dist
 /.pnp
 .pnp.js
 
+#big files
+*.mov
+
 # testing
 /coverage
 
